@@ -1,0 +1,32 @@
+{
+  "name": "books-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wescleymatos/books-api-node.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wescleymatos/books-api-node/issues"
+  },
+  "homepage": "https://github.com/wescleymatos/books-api-node#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
