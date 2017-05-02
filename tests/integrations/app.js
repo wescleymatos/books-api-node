@@ -40,4 +40,44 @@ describe('Routes Books', () => {
         });
     });
 
+    describe('Route POST /books', () => {
+        it('should create a book', done => {
+
+            const book = {
+                id: 2,
+                name: 'New Book'
+            };
+
+            request
+                .post('/books')
+                .send(book)
+                .end((err, res) => {
+                    expect(res.body.id).to.be.eql(book.id);
+                    expect(res.body.name).to.be.eql(book.name);
+
+                    done(err);
+                });
+        });
+    });
+
+    describe('Route PUT /books/{id}', () => {
+        it('should update a book', done => {
+
+            const book = {
+                id: 1,
+                name: 'New Book - Alter'
+            };
+
+            request
+                .put('/books/1')
+                .send(book)
+                .end((err, res) => {
+                    expect(res.body.id).to.be.eql(book.id);
+                    expect(res.body.name).to.be.eql(book.name);
+
+                    done(err);
+                });
+        });
+    });
+
 });
